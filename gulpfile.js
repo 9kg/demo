@@ -3,6 +3,7 @@ const gulp = require('gulp'),
     clean = require('gulp-clean'),
     browser_sync = require('browser-sync').create(),
 	less = require('gulp-less'),
+    // lessChanged = require('gulp-less-changed'),
 	css_url = require('gulp-make-css-url-version'),
 	maps = require('gulp-sourcemaps'),
 	prefix = require('gulp-autoprefixer'),
@@ -11,8 +12,10 @@ const gulp = require('gulp'),
 
 // less
 gulp.task('css', () => {
+    console.log('css')
 	return gulp.src('src/common.less')
 	.pipe(maps.init())
+    // .pipe(lessChanged())
 	.pipe(less())
 	.pipe(prefix({
 	    browsers:  ["> 1%", "last 2 versions"]

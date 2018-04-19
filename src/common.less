@@ -1,4 +1,4 @@
-@import "var";
+@import "_var";
 
 html,body{
 	height: 100%;
@@ -33,16 +33,30 @@ body, ul, li{
 	justify-content: center;
 	height: @left_head_height;
 	background-color: @left_head_bg;
+	color: #f00;
 }
 .left_list{
 	height: calc(100% - @left_head_height);
+	user-select: none;
 }
 .left_list_item{
 	height: @left_list_item_height;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	&:not(:first-child){
-		border-top: 1px solid #eee;
+	cursor: pointer;
+	&:not(:last-child){
+		border-bottom: 1px solid #eee;
+	}
+	&.dragstart{
+		border-bottom: none;
+		background-color: #ccc;
+		&+.left_list_item{
+			border-top: 1px solid #eee;
+		}
+	}
+	&.dragempty{
+		color: transparent;
+		background-color: #eee;
 	}
 }
