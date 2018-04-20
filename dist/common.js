@@ -1,49 +1,51 @@
+'use strict';
+
 // 设置列表拖动排序
 function setDrag(sel, isPlaceHolder) {
-	let $drag = null;
-	let $empty = null;
+	var $drag = null;
+	var $empty = null;
 	$(sel).attr('draggable', 'true');
-	$(document).on('dragstart', sel, function(e){
+	$(document).on('dragstart', sel, function (e) {
 		$(this).addClass('dragstart');
 		$drag = $(this);
-		if(isPlaceHolder){
-			$empty = $(this).clone().addClass('dragempty')
+		if (isPlaceHolder) {
+			$empty = $(this).clone().addClass('dragempty');
 		}
 		e.stopPropagation();
-	}).on('dragend', sel, function(e){
+	}).on('dragend', sel, function (e) {
 		$(this).removeClass('dragstart');
 		$drag = null;
-	}).on('dragenter', sel, function(e){
-		if($drag){
-			if(isPlaceHolder){
-				if(!$(this).is($drag)){
+	}).on('dragenter', sel, function (e) {
+		if ($drag) {
+			if (isPlaceHolder) {
+				if (!$(this).is($drag)) {
 					e.preventDefault();
 					$(this)[$(this).index() > $drag.index() ? 'after' : 'before']($empty);
-				}else{
+				} else {
 					$empty.remove();
 				}
-			}else{
+			} else {
 				e.preventDefault();
 				$(this)[$(this).index() > $drag.index() ? 'after' : 'before']($drag);
 			}
 		}
-	}).on('dragover', sel, function(e){
-		if($drag){
-			if(isPlaceHolder){
-				if(!$(this).is($drag)){
+	}).on('dragover', sel, function (e) {
+		if ($drag) {
+			if (isPlaceHolder) {
+				if (!$(this).is($drag)) {
 					e.preventDefault();
 				}
-			}else{
+			} else {
 				e.preventDefault();
 			}
 		}
-	}).on('dragleave', sel, function(e){
+	}).on('dragleave', sel, function (e) {
 		// if(!$(this).is($drag)){
 		// 	console.log('dragleave');
 		// }
-	}).on('drop', sel, function(e){
-		if($drag){
-			if(isPlaceHolder && !$(this).is($drag)){
+	}).on('drop', sel, function (e) {
+		if ($drag) {
+			if (isPlaceHolder && !$(this).is($drag)) {
 				$empty.replaceWith($drag);
 			}
 		}
@@ -58,6 +60,7 @@ setDrag('.card_row:nth-child(3) .card_item');
 setDrag('.card_row:nth-child(4) .card_item');
 setDrag('.card_row');
 
-$(document).on('click', '.collapse_left', () => {
+$(document).on('click', '.collapse_left', function () {
 	$('.page_left').toggleClass('collapse');
 });
+//# sourceMappingURL=.maps/common.js.map
