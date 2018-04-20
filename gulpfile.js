@@ -2,8 +2,8 @@ const gulp = require('gulp'),
     sequence = require('gulp-sequence'),
     clean = require('gulp-clean'),
     browser_sync = require('browser-sync').create(),
-	less = require('gulp-less'),
-    // lessChanged = require('gulp-less-changed'),
+    less = require('gulp-less'),
+    multiProcess = require('gulp-multi-process'),
 	css_url = require('gulp-make-css-url-version'),
 	maps = require('gulp-sourcemaps'),
 	prefix = require('gulp-autoprefixer'),
@@ -12,10 +12,8 @@ const gulp = require('gulp'),
 
 // less
 gulp.task('css', () => {
-    console.log('css')
-	return gulp.src('src/common.less')
+	gulp.src('src/common.less')
 	.pipe(maps.init())
-    // .pipe(lessChanged())
 	.pipe(less())
 	.pipe(prefix({
 	    browsers:  ["> 1%", "last 2 versions"]
@@ -55,8 +53,8 @@ gulp.task('watch', function(){
     gulp.watch('src/**/*.html', ['html', browser_sync.reload]);
 });
 
-// developing
-const developing = () => {
+// default
+gulp.task('default', () => {
     return sequence('clean', ['css', 'html', 'js'], 'watch', () => {
         console.log('~~开发辅助已打开~~');
         browser_sync.init({
@@ -67,19 +65,20 @@ const developing = () => {
             port: 5211
         });
     });
-}
-// production
-const production = () => {
+});
+
+// create
+gulp.task('create', () => {
     return sequence('clean', ['css', 'html', 'js'], () => {
         console.log('~~create success~~');
     });
-}
-// default
-gulp.task('default', developing);
-// default
-gulp.task('create', production);
+});
 
 module.exports = {
-    run: developing,
-    create: production
+    run(){
+        gulp.start('default');
+    },
+    create(){
+        gulp.start('create');
+    }
 };
