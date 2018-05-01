@@ -10,7 +10,7 @@
   width: 14px;
   height: 14px;
   box-sizing: border-box;
-  border: 2px solid #666;
+  border: 2px solid #dcdcde;
   border-top: none;
   border-right: none;
   transform: rotate(-45deg);
@@ -21,7 +21,7 @@
   left: calc(100%/6);
   bottom: 10px;
   width: calc(100%/6*5 - 30px);
-  border: 1px dashed #666;
+  border: 1px dashed #dcdcde;
 }
 .card_list {
   display: -ms-flexbox;
@@ -86,18 +86,30 @@
   -ms-flex-align: center;
       align-items: center;
 }
-.card_item .card_icon {
-  width: 50px;
-  height: 100%;
+.card_item .card_icon_ct {
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  padding: 10px;
+  width: 60px;
+  box-sizing: border-box;
+  height: 100%;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  display: -ms-flexbox;
+  display: flex;
+}
+.card_item .card_icon_ct .card_icon {
+  width: 100%;
+  height: 100%;
 }
 .card_item .card_content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  width: calc(100% - 50px);
+  width: calc(100% - 60px);
 }
 .card_item .card_content .card_en_name,
 .card_item .card_content .card_cn_name {
@@ -106,16 +118,23 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.card_item .card_content .card_en_name {
+  color: #595959;
+}
+.card_item .card_content .card_cn_name {
+  color: #8f8f8f;
+}
 .card_item .icon_remove,
 .card_item .icon_edit {
   position: absolute;
-  right: 0;
+  right: 5px;
+  cursor: pointer;
 }
 .card_item .icon_remove {
-  top: 0;
+  top: 5px;
 }
 .card_item .icon_edit {
-  bottom: 0;
+  bottom: 5px;
 }
 .card_main {
   display: -ms-flexbox;
@@ -138,13 +157,21 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.card_main .card_content .card_en_name {
+  font-weight: bold;
+  color: #2c3892;
+}
+.card_main .card_content .card_cn_name {
+  color: #8f8f8f;
+}
 .card_main .icon_edit {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 5px;
+  bottom: 5px;
+  cursor: pointer;
 }
 .card_add {
-  outline: 2px dashed #00f;
+  outline: 2px dashed #2c3892;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -153,6 +180,13 @@
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  color: #2c3892;
+  cursor: pointer;
+}
+.card_add .icon {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
 }
 .card_btn {
   background-color: transparent;
@@ -173,7 +207,7 @@
 .page_ct > .page_top {
   width: 100%;
   height: 50px;
-  background: #666;
+  background: #2f3ba2;
 }
 .page_ct > .page_content {
   display: -ms-flexbox;
@@ -186,6 +220,8 @@
   -ms-flex-negative: 0;
       flex-shrink: 0;
   transition: all .3s;
+  background-color: #fff;
+  box-shadow: 0 0 5px #999;
 }
 .page_left.collapse {
   margin-left: -250px;
@@ -199,7 +235,6 @@
   width: calc(100% - 250px);
   -ms-flex-positive: 1;
       flex-grow: 1;
-  background: #ccc;
 }
 .left_head {
   display: -ms-flexbox;
@@ -209,9 +244,12 @@
   -ms-flex-pack: justify;
       justify-content: space-between;
   height: 70px;
-  background-color: #888;
-  color: #f00;
   padding-left: 20px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  color: #2f3ba2;
+  font-weight: bold;
+  font-size: 18px;
 }
 .left_head .oper_list {
   display: -ms-flexbox;
@@ -220,10 +258,16 @@
       align-items: center;
   padding-right: 20px;
 }
-.left_head .oper_list .icon {
+.left_head .oper_list li {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 .left_head .oper_list .collapse_left {
   transition: all .3s;
@@ -263,16 +307,112 @@
   -ms-flex-align: center;
       align-items: center;
   height: 70px;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 1px solid #ddd;
   box-sizing: border-box;
+  color: #2f3ba2;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.right_head .system_name_en {
+  margin-right: 10px;
 }
 .page_set {
-  position: fixed;
+  position: absolute;
   background-color: #fff;
-  top: 10%;
-  height: 80%;
-  left: 10%;
-  width: 80%;
+  top: 50%;
+  height: 600px;
+  margin-top: -300px;
+  left: 50%;
+  margin-left: -375px;
+  width: 750px;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 50px;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  padding-bottom: 100px;
+  box-sizing: border-box;
+}
+.page_set .set_left {
+  width: 200px;
+  border: 1px solid #ccc;
+}
+.page_set .set_left .set_left_head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 30px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.page_set .set_right {
+  width: 350px;
+  border: 1px solid #ccc;
+}
+.page_set .set_right .set_right_head {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 30px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+.page_set .set_right .right_list .system_item:not(:first-child) {
+  border-top: 1px solid #ddd;
+}
+.page_set .set_right .right_list .menus {
+  border-top: 1px solid #ddd;
+}
+.page_set .set_right .right_list .menus .menu_item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.page_set .set_right .right_list .menus .menu_item .menu_check_flag {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-right: 10px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.page_set .set_right .right_list .menus .menu_item.checked .menu_check_flag:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #333;
+}
+.page_set .set_oper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+.page_set .set_oper .btn {
+  margin: 0 30px;
 }
 
 /*# sourceMappingURL=.maps/user.css.map */

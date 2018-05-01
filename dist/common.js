@@ -51,6 +51,16 @@ function setDrag(sel, isPlaceHolder) {
 		}
 	});
 }
+// 头部四个按钮
+$(document).on('click', '.page_top .oper_user ', function () {
+	alert('user');
+}).on('click', '.page_top .oper_home ', function () {
+	alert('home');
+}).on('click', '.page_top .oper_logout ', function () {
+	alert('logout');
+}).on('click', '.page_top .oper_language ', function () {
+	alert('language');
+});
 
 // setDrag('.left_list_item', true);
 

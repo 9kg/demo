@@ -8,88 +8,241 @@
 </head>
 <body>
 	<div class="page_ct">
-		<div class="page_top">hrpackage</div>
+		<div class="page_top">
+			<div class="top_left">
+				<i class="top_logo"></i>
+				<span class="logo_title">Purchase Management System</span>
+			</div>
+			<div class="top_right">
+				<i class="top_bg_3colors"></i>
+				<ul class="oper_list">
+					<li class="oper_item oper_user">
+						<i class="icon icon_user"></i>
+						<span class="oper_name">Gloria Ju</span>
+						<span class="user_num">2</span>
+					</li>
+					<li class="oper_item oper_home">
+						<i class="icon icon_home"></i>
+						<span class="oper_name">Home</span>
+					</li>
+					<li class="oper_item oper_logout">
+						<i class="icon icon_logout"></i>
+						<span class="oper_name">Logout</span>
+					</li>
+					<li class="oper_item oper_language">
+						<i class="icon icon_language"></i>
+						<span class="oper_name">中文</span>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div class="page_content">
 			<section class="base_area">
 				<label class="base_field">
 					<span class="field_name">系统中文名</span>
-					<input type="text" class="field_input">
+					<input type="text" class="field_input" value="采购管理系统功能服务">
 				</label>
 				<label class="base_field">
 					<span class="field_name">系统英文名</span>
-					<input type="text" class="field_input">
+					<input type="text" class="field_input" value="Purchase Management System Function Services">
 				</label>
 			</section>
 			<section class="card_area">
 				<ul class="card_list">
-					<li class="card_row">
+					<li class="card_row" data-id="1">
 						<div class="card_main">
 							<div class="card_content">
-								<span class="card_en_name">Vendor Masterdsadas</span>
-								<span class="card_cn_name">厂商管理厂商管理厂商管理厂商管理</span>
+								<span class="card_en_name">Purchase Preparation</span>
+								<span class="card_cn_name">采购准备服务功能1</span>
 							</div>
 							<i class="icon icon_edit"></i>
 						</div>
 						<ul class="card_items">
-							<li class="card_item">
-								<i class="card_icon"></i>
+							<li class="card_item" data-id="1.1">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
 								<div class="card_content">
-									<span class="card_en_name">Vendor Masterdsadas</span>
-									<span class="card_cn_name">厂商管理厂商管理厂商管理厂商管理</span>
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理1-1</span>
 								</div>
 								<i class="icon icon_remove"></i>
 								<i class="icon icon_edit"></i>
 							</li>
-							<li class="card_item">card_item2</li>
-							<li class="card_item">card_item3</li>
-							<li class="card_item">card_item4</li>
-							<li class="card_item">card_item5</li>
+							<li class="card_item" data-id="1.2">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理1-2</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
 							<li class="card_add">
 								<i class="icon icon_add"></i>
 								添加系统
 							</li>
-							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
+							<li class="card_btn"><a href="javascript:;" class="btn btn_stage btn_remove_stage">删除stage</a></li>
 						</ul>
 					</li>
-					<li class="card_row">
-						<div class="card_main">card_main2</div>
+					<li class="card_row" data-id="2">
+						<div class="card_main">
+							<div class="card_content">
+								<span class="card_en_name">Purchase Preparation</span>
+								<span class="card_cn_name">采购准备服务功能2</span>
+							</div>
+							<i class="icon icon_edit"></i>
+						</div>
 						<ul class="card_items">
-							<li class="card_item">card_item1</li>
-							<li class="card_item">card_item2</li>
-							<li class="card_item">card_item3</li>
-							<li class="card_add">card_item4</li>
-							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
+							<li class="card_item" data-id="2.1">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理2-1</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_item" data-id="2.2">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理2-2</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_item" data-id="2.3">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理2-3</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_add">
+								<i class="icon icon_add"></i>
+								添加系统
+							</li>
+							<li class="card_btn"><a href="javascript:;" class="btn btn_stage btn_remove_stage">删除stage</a></li>
 						</ul>
 					</li>
-					<li class="card_row">
-						<div class="card_main">card_main3</div>
+					<li class="card_row" data-id="3">
+						<div class="card_main">
+							<div class="card_content">
+								<span class="card_en_name">Purchase Preparation</span>
+								<span class="card_cn_name">采购准备服务功能3</span>
+							</div>
+							<i class="icon icon_edit"></i>
+						</div>
 						<ul class="card_items">
-							<li class="card_item">card_item1</li>
-							<li class="card_item">card_item2</li>
-							<li class="card_item">card_item3</li>
-							<li class="card_add">card_item4</li>
-							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
+							<li class="card_item"  data-id="3.1">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理3-1</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_item"  data-id="3.2">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理3-2</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_item"  data-id="3.3">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理3-3</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_add">
+								<i class="icon icon_add"></i>
+								添加系统
+							</li>
+							<li class="card_btn"><a href="javascript:;" class="btn btn_stage btn_remove_stage">删除stage</a></li>
 						</ul>
 					</li>
-					<li class="card_row">
-						<div class="card_main">card_main4</div>
+					<li class="card_row" data-id="4">
+						<div class="card_main">
+							<div class="card_content">
+								<span class="card_en_name">Purchase Preparation</span>
+								<span class="card_cn_name">采购准备服务功能4</span>
+							</div>
+							<i class="icon icon_edit"></i>
+						</div>
 						<ul class="card_items">
-							<li class="card_item">card_item1</li>
-							<li class="card_item">card_item2</li>
-							<li class="card_item">card_item3</li>
-							<li class="card_add">card_item4</li>
-							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
+							<li class="card_item" data-id="4.1">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理4-1</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_item" data-id="4.2">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理4-2</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_item" data-id="4.3">
+								<div class="card_icon_ct">
+									<i class="card_icon icon_vender_master"></i>
+								</div>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Master</span>
+									<span class="card_cn_name">厂商管理4-3</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
+							<li class="card_add">
+								<i class="icon icon_add"></i>
+								添加系统
+							</li>
+							<li class="card_btn"><a href="javascript:;" class="btn btn_stage btn_remove_stage">删除stage</a></li>
 						</ul>
 					</li>
 				</ul>
-				<a href="javascript:;" class="btn btn_add_stage">增加stage</a>
+				<a href="javascript:;" class="btn btn_stage btn_add_stage">增加stage</a>
 			</section>
 		</div>
 		<div class="page_bottom">
 			<section class="select_theme_area">
 				<span class="theme_guide_desc">请选择系统风格</span>
 				<ul class="themes">
-					<li class="theme_item">
+					<li class="theme_item active">
 						<div class="theme_img"></div>
 						<span class="theme_desc">默认</span>
 					</li>
@@ -104,16 +257,14 @@
 				</ul>
 			</section>
 			<section class="oper_area">
-				<a href="javascript:;" class="btn">保存</a>
-				<a href="javascript:;" class="btn">预览</a>
-				<a href="javascript:;" class="btn">发布</a>
+				<a href="javascript:;" class="btn btn_save">保存</a>
+				<a href="javascript:;" class="btn btn_preview">预览</a>
+				<a href="javascript:;" class="btn btn_publish">发布</a>
 			</section>
 		</div>
 	</div>
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="./common.js"></script>
-	<script type="text/javascript">
-		setDrag('.card_row:nth-child(1) .card_item');
-	</script>
+	<script src="./index.js"></script>
 </body>
 </html>

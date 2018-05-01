@@ -2,7 +2,8 @@
 @import "_icon";
 
 // 默认按钮背景色
-@btn_bg: #666;
+@btn_bg: #213e97;
+@btn_bg_stage: #f69506;
 
 html,body{
 	height: 100%;
@@ -11,6 +12,7 @@ body{
 	font-size: 14px;
 	background-color: @page_body_bg;
 	min-width: 1280px;
+	position: relative;
 }
 body, ul, li{
 	margin: 0;
@@ -30,6 +32,15 @@ ul{
 	&:active{
 		background-color: darken(@btn_bg, 20%);
 	}
+	&.btn_stage{
+		background-color: @btn_bg_stage;
+		&:hover {
+			background-color: darken(@btn_bg_stage, 10%);
+		}
+		&:active {
+			background-color: darken(@btn_bg_stage, 20%);
+		}
+	}
 }
 .page_ct{
 	height: 100%;
@@ -39,5 +50,63 @@ ul{
 		width: 100%;
 		height: @page_head_height;
 		background: @page_head_bg;
+		display: flex;
+		color: #fff;
+		justify-content: space-between;
+		align-items: center;
+		.top_left{
+			display: flex;
+			align-items: center;
+			font-size: 18px;
+			.top_logo{
+				width: 100px;
+				height: 50px;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+		}
+		.top_right{
+			display: flex;
+			align-items: center;
+			.top_bg_3colors {
+				width: 100px;
+				height: 50px;
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+			.oper_list{
+				display: flex;
+				padding-left: 50px;
+				padding-right: 30px;
+				.oper_item{
+					display: flex;
+					margin: 0 15px;
+					align-items: center;
+					cursor: pointer;
+					.icon{
+						margin-right: 10px;
+					}
+					&.oper_user{
+						position: relative;
+						.user_num{
+							background-color: #fff;
+							position: absolute;
+							top: -10px;
+							right: -15px;
+							color: #2f3ba2;
+							font-size: 12px;
+							// width: 12px;
+							padding: 0 3px;
+							height: 12px;
+							line-height: 12px;
+							text-align: center;
+							border-radius: 3px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
