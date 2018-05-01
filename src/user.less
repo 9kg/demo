@@ -1,0 +1,117 @@
+@import "_var";
+@import "_card";
+
+// 页面左部宽度
+@page_left_width: 250px;
+// 左部头部高度
+@left_head_height: 70px;
+// 左部头部背景
+@left_head_bg: #888;
+// 左部列表项高度
+@left_list_item_height: 40px;
+
+.page_ct {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    >.page_top {
+        width: 100%;
+        height: @page_head_height;
+        background: @page_head_bg;
+    } 
+    >.page_content{
+    	display: flex;
+        height: calc(100% - @page_head_height);
+    }
+}
+
+.page_left {
+    height: 100%;
+    width: @page_left_width;
+    flex-shrink: 0;
+    transition: all .3s;
+    &.collapse {
+        margin-left: -@page_left_width;
+        position: relative;
+        z-index: 2;
+        .collapse_left {
+            transform: translateX(50px);
+        }
+    }
+}
+
+.page_right{
+	width: calc(100% - @page_left_width);
+	flex-grow: 1;
+	background: #ccc;
+}
+.left_head{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: @left_head_height;
+	background-color: @left_head_bg;
+	color: #f00;
+    padding-left: 20px;
+    .oper_list{
+        display: flex;
+        align-items: center;
+        padding-right: 20px;
+        .icon{
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+        }
+        .collapse_left {
+            transition: all .3s;
+        }
+    }
+}
+.left_list{
+	height: calc(100% - @left_head_height);
+	user-select: none;
+}
+.left_list_item{
+	height: @left_list_item_height;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    cursor: pointer;
+    padding-left: 25px;
+    .icon{
+        flex-shrink: 0;
+    }
+    .menu_name{
+        padding-left: 15px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+	// &.dragstart{
+	// 	border-bottom: none;
+	// 	background-color: #ccc;
+	// 	&+.left_list_item{
+	// 		border-top: 1px solid #eee;
+	// 	}
+	// }
+	// &.dragempty{
+	// 	color: transparent;
+	// 	background-color: #eee;
+	// }
+}
+.right_head{
+    display: flex;
+    align-items: center;
+    height: @left_head_height;
+    border-bottom: 1px solid #aaa;
+    box-sizing: border-box;
+}
+.page_set{
+    position: fixed;
+    background-color: #fff;
+    top: 10%;
+    height: 80%;
+    left: 10%;
+    width: 80%;
+}

@@ -50,14 +50,14 @@ function setDrag(sel, isPlaceHolder) {
 	});
 }
 
-setDrag('.left_list_item', true);
+// setDrag('.left_list_item', true);
 
-setDrag('.card_row:nth-child(1) .card_item');
-setDrag('.card_row:nth-child(2) .card_item');
-setDrag('.card_row:nth-child(3) .card_item');
-setDrag('.card_row:nth-child(4) .card_item');
-setDrag('.card_row');
+// setDrag('.card_row:nth-child(1) .card_item');
+// setDrag('.card_row:nth-child(2) .card_item');
+// setDrag('.card_row:nth-child(3) .card_item');
+// setDrag('.card_row:nth-child(4) .card_item');
+// setDrag('.card_row');
 
-$(document).on('click', '.collapse_left', () => {
-	$('.page_left').toggleClass('collapse');
-});
+// $(document).on('click', '.collapse_left', () => {
+// 	$('.page_left').toggleClass('collapse');
+// });

@@ -4,40 +4,51 @@
 	<meta charset="UTF-8">
 	<title>hrssc</title>
 	<link rel="stylesheet" type="text/css" href="./common.css">
+	<link rel="stylesheet" type="text/css" href="./index.css">
 </head>
 <body>
 	<div class="page_ct">
 		<div class="page_top">hrpackage</div>
 		<div class="page_content">
-			<div class="page_left">
-				<div class="left_head">
-					<span>left head</span>
-					<i class="collapse_left">icon</i>
-				</div>
-				<ul class="left_list">
-					<li class="left_list_item">列表项01</li>
-					<li class="left_list_item">列表项02</li>
-					<li class="left_list_item">列表项03</li>
-					<li class="left_list_item">列表项04</li>
-					<li class="left_list_item">列表项05</li>
-					<li class="left_list_item">列表项06</li>
-					<li class="left_list_item">列表项07</li>
-					<li class="left_list_item">列表项08</li>
-					<li class="left_list_item">列表项09</li>
-					<li class="left_list_item">列表项10</li>
-					<li class="left_list_item">列表项11</li>
-					<li class="left_list_item">列表项12</li>
-				</ul>
-			</div>
-			<div class="page_right">
+			<section class="base_area">
+				<label class="base_field">
+					<span class="field_name">系统中文名</span>
+					<input type="text" class="field_input">
+				</label>
+				<label class="base_field">
+					<span class="field_name">系统英文名</span>
+					<input type="text" class="field_input">
+				</label>
+			</section>
+			<section class="card_area">
 				<ul class="card_list">
 					<li class="card_row">
-						<div class="card_main">card_main1</div>
+						<div class="card_main">
+							<div class="card_content">
+								<span class="card_en_name">Vendor Masterdsadas</span>
+								<span class="card_cn_name">厂商管理厂商管理厂商管理厂商管理</span>
+							</div>
+							<i class="icon icon_edit"></i>
+						</div>
 						<ul class="card_items">
-							<li class="card_item">card_item1</li>
+							<li class="card_item">
+								<i class="card_icon"></i>
+								<div class="card_content">
+									<span class="card_en_name">Vendor Masterdsadas</span>
+									<span class="card_cn_name">厂商管理厂商管理厂商管理厂商管理</span>
+								</div>
+								<i class="icon icon_remove"></i>
+								<i class="icon icon_edit"></i>
+							</li>
 							<li class="card_item">card_item2</li>
 							<li class="card_item">card_item3</li>
 							<li class="card_item">card_item4</li>
+							<li class="card_item">card_item5</li>
+							<li class="card_add">
+								<i class="icon icon_add"></i>
+								添加系统
+							</li>
+							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
 						</ul>
 					</li>
 					<li class="card_row">
@@ -46,7 +57,8 @@
 							<li class="card_item">card_item1</li>
 							<li class="card_item">card_item2</li>
 							<li class="card_item">card_item3</li>
-							<li class="card_item">card_item4</li>
+							<li class="card_add">card_item4</li>
+							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
 						</ul>
 					</li>
 					<li class="card_row">
@@ -55,7 +67,8 @@
 							<li class="card_item">card_item1</li>
 							<li class="card_item">card_item2</li>
 							<li class="card_item">card_item3</li>
-							<li class="card_item">card_item4</li>
+							<li class="card_add">card_item4</li>
+							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
 						</ul>
 					</li>
 					<li class="card_row">
@@ -64,14 +77,43 @@
 							<li class="card_item">card_item1</li>
 							<li class="card_item">card_item2</li>
 							<li class="card_item">card_item3</li>
-							<li class="card_item">card_item4</li>
+							<li class="card_add">card_item4</li>
+							<li class="card_btn"><a href="javascript:;" class="btn">删除stage</a></li>
 						</ul>
 					</li>
 				</ul>
-			</div>
+				<a href="javascript:;" class="btn btn_add_stage">增加stage</a>
+			</section>
+		</div>
+		<div class="page_bottom">
+			<section class="select_theme_area">
+				<span class="theme_guide_desc">请选择系统风格</span>
+				<ul class="themes">
+					<li class="theme_item">
+						<div class="theme_img"></div>
+						<span class="theme_desc">默认</span>
+					</li>
+					<li class="theme_item">
+						<div class="theme_img"></div>
+						<span class="theme_desc">风格一</span>
+					</li>
+					<li class="theme_item">
+						<div class="theme_img"></div>
+						<span class="theme_desc">风格二</span>
+					</li>
+				</ul>
+			</section>
+			<section class="oper_area">
+				<a href="javascript:;" class="btn">保存</a>
+				<a href="javascript:;" class="btn">预览</a>
+				<a href="javascript:;" class="btn">发布</a>
+			</section>
 		</div>
 	</div>
 	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="./common.js"></script>
+	<script type="text/javascript">
+		setDrag('.card_row:nth-child(1) .card_item');
+	</script>
 </body>
 </html>

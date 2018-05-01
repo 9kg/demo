@@ -12,7 +12,7 @@ const gulp = require('gulp'),
 
 // less
 gulp.task('css', () => {
-	gulp.src('src/common.less')
+    gulp.src(['src/*.less', '!src/_var.less', '!src/_icon.less', '!src/_card.less'])
 	.pipe(maps.init())
 	.pipe(less())
 	.pipe(prefix({
@@ -26,17 +26,17 @@ gulp.task('css', () => {
 
 // babel
 gulp.task("js", () => {
-  return gulp.src("src/common.js")
+  return gulp.src("src/*.js")
     .pipe(maps.init())
     .pipe(babel())
-    .pipe(concat("common.js"))
+    // .pipe(concat("common.js"))
     .pipe(maps.write('./.maps'))
     .pipe(gulp.dest("dist"));
 });
 
-// babel
+// copy html
 gulp.task("html", () => {
-  return gulp.src("src/**/*.html")
+    return gulp.src(["src/**/*.*", "!src/**/*.less", "!src/**/*.js"])
     .pipe(gulp.dest("dist"));
 });
 

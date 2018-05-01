@@ -1,7 +1,16 @@
 @import "_var";
+@import "_icon";
+
+// 默认按钮背景色
+@btn_bg: #666;
 
 html,body{
 	height: 100%;
+}
+body{
+	font-size: 14px;
+	background-color: @page_body_bg;
+	min-width: 1280px;
 }
 body, ul, li{
 	margin: 0;
@@ -9,6 +18,18 @@ body, ul, li{
 }
 ul{
 	list-style-type: none;
+}
+.btn{
+	text-decoration: none;
+	color: #fff;
+	background-color: @btn_bg;
+	padding: .4em 1.2em;
+	&:hover{
+		background-color: darken(@btn_bg, 10%);
+	}
+	&:active{
+		background-color: darken(@btn_bg, 20%);
+	}
 }
 .page_ct{
 	height: 100%;
@@ -19,105 +40,4 @@ ul{
 		height: @page_head_height;
 		background: @page_head_bg;
 	}
-	>.page_content{
-		display: flex;
-		height: calc(100% - @page_head_height);
-	}
-}
-.page_left{
-	height: 100%;
-	width: @page_left_width;
-	flex-shrink: 0;
-	transition: all .3s;
-	&.collapse{
-		margin-left: -@page_left_width;
-		position: relative;
-		z-index: 2;
-		.collapse_left{
-			margin-right: -50px;
-		}
-	}
-}
-.page_right{
-	width: calc(100% - @page_left_width);
-	flex-grow: 1;
-	background: #ccc;
-}
-.left_head{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: @left_head_height;
-	background-color: @left_head_bg;
-	color: #f00;
-	padding-left: 20px;
-	.collapse_left{
-		cursor: pointer;
-		background-color: rgba(0, 0, 0, .3);
-		height: @left_head_height;
-		line-height: @left_head_height;
-		padding: 0 15px;
-		transition: all .3s;
-	}
-}
-.left_list{
-	height: calc(100% - @left_head_height);
-	user-select: none;
-}
-.left_list_item{
-	height: @left_list_item_height;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	&:not(:last-child){
-		border-bottom: 1px solid #eee;
-	}
-	&.dragstart{
-		border-bottom: none;
-		background-color: #ccc;
-		&+.left_list_item{
-			border-top: 1px solid #eee;
-		}
-	}
-	&.dragempty{
-		color: transparent;
-		background-color: #eee;
-	}
-}
-
-
-.card_list{
-	display: flex;
-	flex-direction: column;
-	padding: 0 10px;
-	.card_row{
-		display: flex;
-		padding: 5px 0;
-		.card_main{
-			width: 250px;
-			flex-shrink: 0;
-		}
-		.card_items{
-			display: flex;
-			flex-grow: 1;
-			margin-left: 10px;
-			justify-content: space-between;
-			.card_item{
-				width: calc(25% - 10px);
-				&.dragstart{
-					background-color: rgba(0,0,0,.3);
-				}
-			}
-		}
-		&.dragstart{
-			background-color: rgba(0,0,0,.3);
-		}
-	}
-}
-.card_main, .card_item{
-	border: 1px solid #fff;
-	height: 100px;
-	user-select: none;
-	cursor: pointer;
 }
