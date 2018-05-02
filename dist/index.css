@@ -64,7 +64,13 @@
 .card_list .card_row .card_items .card_item.dragstart {
   background-color: rgba(0, 0, 0, 0.3);
 }
+.card_list .card_row .card_items .card_item.dragover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 .card_list .card_row.dragstart {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.card_list .card_row.dragover {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .card_main,

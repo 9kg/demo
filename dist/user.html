@@ -51,40 +51,60 @@
                         <span class="menu_name">Vender Master</span>
                     </li>
 					<li class="left_list_item">
-                        <i class="icon icon_left_delivery_schedule_off"></i>
-                        <span class="menu_name">Delivery Schedule</span>
-                    </li>
-					<li class="left_list_item">
                         <i class="icon icon_left_budget_off"></i>
                         <span class="menu_name">Budget</span>
+                    </li>
+					<li class="left_list_item">
+                        <i class="icon icon_left_info_record_off"></i>
+                        <span class="menu_name">Info Record</span>
                     </li>
 					<li class="left_list_item">
                         <i class="icon icon_left_epc_review_off"></i>
                         <span class="menu_name">Epc Review</span>
                     </li>
 					<li class="left_list_item">
+                        <i class="icon icon_left_po_summary_off"></i>
+                        <span class="menu_name">PO Summary</span>
+                    </li>
+					<li class="left_list_item">
+                        <i class="icon icon_left_purchase_request_off"></i>
+                        <span class="menu_name">Purchase Request</span>
+                    </li>
+					<li class="left_list_item">
+                        <i class="icon icon_left_purchase_order_off"></i>
+                        <span class="menu_name">Purchase Order</span>
+                    </li>
+					<li class="left_list_item">
                         <i class="icon icon_left_delivery_schedule_off"></i>
                         <span class="menu_name">Delivery Schedule</span>
                     </li>
 					<li class="left_list_item">
-                        <i class="icon icon_left_budget_off"></i>
-                        <span class="menu_name">Budget</span>
+                        <i class="icon icon_left_logistic_off"></i>
+                        <span class="menu_name">Logistic</span>
                     </li>
 					<li class="left_list_item">
-                        <i class="icon icon_left_epc_review_off"></i>
-                        <span class="menu_name">Epc Review</span>
+                        <i class="icon icon_left_wan_off"></i>
+                        <span class="menu_name">WAN</span>
                     </li>
 					<li class="left_list_item">
-                        <i class="icon icon_left_delivery_schedule_off"></i>
-                        <span class="menu_name">Delivery Schedule</span>
+                        <i class="icon icon_left_import_return_off"></i>
+                        <span class="menu_name">Import Return</span>
                     </li>
 					<li class="left_list_item">
-                        <i class="icon icon_left_budget_off"></i>
-                        <span class="menu_name">Budget</span>
+                        <i class="icon icon_left_lc_downpay_off"></i>
+                        <span class="menu_name">L/C & Down Pay</span>
                     </li>
 					<li class="left_list_item">
-                        <i class="icon icon_left_epc_review_off"></i>
-                        <span class="menu_name">Epc Review</span>
+                        <i class="icon icon_left_invoice_verification_off"></i>
+                        <span class="menu_name">Invoice Vertification</span>
+                    </li>
+					<li class="left_list_item">
+                        <i class="icon icon_left_outgoing_payment_off"></i>
+                        <span class="menu_name">Outgoing Payment</span>
+                    </li>
+					<li class="left_list_item">
+                        <i class="icon icon_left_payment_tracking_off"></i>
+                        <span class="menu_name">Payment Tracking</span>
                     </li>
 				</ul>
 			</div>
@@ -281,48 +301,176 @@
 				</ul>
 			</div>
             <div class="page_set">
-                <div class="set_left">
-                    <div class="set_left_head">My Favorites</div>
-                    <ul class="left_list">
-                        <li class="left_list_item">
-                            <i class="icon oper_set">icon</i>
-                            <span class="menu_name">Vender MasterVender MasterVender MasterVender Master</span>
-                        </li>
-                        <li class="left_list_item">列表项02</li>
-                        <li class="left_list_item">列表项03</li>
-                        <li class="left_list_item">列表项04</li>
-                    </ul>
-                </div>
-                <div class="set_right">
-                    <div class="set_right_head">系统功能与服务</div>
-                    <ul class="right_list">
-                        <li class="system_item">
-                            <span class="system_name">采购管理功能</span>
-                            <ul class="menus">
-                                <li class="menu_item">
-                                    <span class="menu_check_flag"></span>
-                                    <span class="menu_name">Budget 预算</span>
-                                </li>
-                                <li class="menu_item checked">
-                                    <span class="menu_check_flag"></span>
-                                    <span class="menu_name">Budget 预算</span>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="system_item">
-                            <span class="system_name">销售管理功能</span>
-                        </li>
-                        <li class="system_item">
-                            <span class="system_name">人事管理功能</span>
-                        </li>
-                        <li class="system_item">
-                            <span class="system_name">财务共享功能</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="set_oper">
-                    <a href="javascript:;" class="btn btn_save">保存</a>
-                    <a href="javascript:;" class="btn btn_cancel">取消</a>
+                <div class="page_set_content">
+                    <div class="set_left">
+                        <div class="set_left_head">My Favorites</div>
+                        <ul class="left_list">
+                            <li class="left_list_item" data-id="1">
+                                <i class="icon icon_left_vender_master_on"></i>
+                                <span class="menu_name">Vender Master</span>
+                            </li>
+                            <li class="left_list_item" data-id="2">
+                                <i class="icon icon_left_budget_off"></i>
+                                <span class="menu_name">Budget</span>
+                            </li>
+                            <li class="left_list_item" data-id="4">
+                                <i class="icon icon_left_info_record_off"></i>
+                                <span class="menu_name">Info Record</span>
+                            </li>
+                            <li class="left_list_item" data-id="5">
+                                <i class="icon icon_left_po_summary_off"></i>
+                                <span class="menu_name">PO Summary</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="set_right">
+                        <div class="set_right_head">系统功能与服务</div>
+                        <ul class="right_list">
+                            <li class="system_item active">
+                                <span class="system_name">采购管理功能</span>
+                                <ul class="menus">
+                                    <li class="menu_item checked" data-id="1" data-icon="icon_left_vender_master_on">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Vendor Master</span>
+                                            <span class="menu_name_cn">厂商管理</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item checked" data-id="2" data-icon="icon_left_budget_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Budget</span>
+                                            <span class="menu_name_cn">预算</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="3" data-icon="icon_left_epc_review_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">EPC</span>
+                                            <span class="menu_name_cn">预算审查</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item checked" data-id="4" data-icon="icon_left_info_record_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Info Record</span>
+                                            <span class="menu_name_cn">信息记录</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item checked" data-id="5" data-icon="icon_left_po_summary_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">PO Summary</span>
+                                            <span class="menu_name_cn">费用价格</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="system_item">
+                                <span class="system_name">销售管理功能</span>
+                                <ul class="menus">
+                                    <li class="menu_item" data-id="6" data-icon="icon_left_purchase_request_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Purchase Request</span>
+                                            <span class="menu_name_cn">采购申请</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="7" data-icon="icon_left_purchase_order_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Purchase Order</span>
+                                            <span class="menu_name_cn">采购订单</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="8" data-icon="icon_left_delivery_schedule_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Delivery Schedule</span>
+                                            <span class="menu_name_cn">交货计划</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="9" data-icon="icon_left_logistic_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Logistic</span>
+                                            <span class="menu_name_cn">进出口</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="10" data-icon="icon_left_wan_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">WAN</span>
+                                            <span class="menu_name_cn">收获管理</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="system_item">
+                                <span class="system_name">人事管理功能</span>
+                                <ul class="menus">
+                                    <li class="menu_item" data-id="11" data-icon="icon_left_purchase_request_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Import Return</span>
+                                            <span class="menu_name_cn">中文翻译</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="12" data-icon="icon_left_purchase_order_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">L/C & Down Pay</span>
+                                            <span class="menu_name_cn">中文翻译</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="13" data-icon="icon_left_delivery_schedule_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Invoice Vertification</span>
+                                            <span class="menu_name_cn">中文翻译</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="14" data-icon="icon_left_logistic_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Outgoing Payment</span>
+                                            <span class="menu_name_cn">中文翻译</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="15" data-icon="icon_left_wan_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Payment Tracking</span>
+                                            <span class="menu_name_cn">中文翻译</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="system_item">
+                                <span class="system_name">财务共享功能</span>
+                                <ul class="menus">
+                                    <li class="menu_item" data-id="16" data-icon="icon_left_wan_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Test16</span>
+                                            <span class="menu_name_cn">中文翻译</span>
+                                        </span>
+                                    </li>
+                                    <li class="menu_item" data-id="17" data-icon="icon_left_wan_off">
+                                        <span class="menu_check_flag"></span>
+                                        <span class="menu_name">
+                                            <span class="menu_name_en">Test17</span>
+                                            <span class="menu_name_cn">中文翻译</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="set_oper">
+                        <a href="javascript:;" class="btn btn_save">保存</a>
+                        <a href="javascript:;" class="btn btn_cancel">取消</a>
+                    </div>
                 </div>
             </div>
 		</div>
