@@ -178,7 +178,7 @@
         <mxCell id="3aO05NasJ-ugvc4QmVaX-17" value="出口" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="3aO05NasJ-ugvc4QmVaX-12">
           <mxGeometry y="130" width="180" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="3aO05NasJ-ugvc4QmVaX-18" value="标注（坐标: 物品，怪物的id,name,image）" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="3aO05NasJ-ugvc4QmVaX-12">
+        <mxCell id="3aO05NasJ-ugvc4QmVaX-18" value="标注（坐标: 物品，怪物）" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="3aO05NasJ-ugvc4QmVaX-12">
           <mxGeometry y="156" width="180" height="26" as="geometry" />
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-19" value="已消除坐标集合" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="3aO05NasJ-ugvc4QmVaX-12">
@@ -278,7 +278,7 @@
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3aO05NasJ-ugvc4QmVaX-56" value="-" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3aO05NasJ-ugvc4QmVaX-55">
+        <mxCell id="3aO05NasJ-ugvc4QmVaX-56" value="标注(索引: 物品)" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="3aO05NasJ-ugvc4QmVaX-55">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-57" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="3aO05NasJ-ugvc4QmVaX-55">
@@ -325,7 +325,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-71" value="物品" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="850" y="140" width="160" height="138" as="geometry">
+          <mxGeometry x="580" y="200" width="160" height="138" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -345,7 +345,7 @@
           <mxGeometry y="112" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-76" value="装备" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="850" y="314" width="160" height="112" as="geometry">
+          <mxGeometry x="580" y="374" width="160" height="112" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -362,7 +362,7 @@
           <mxGeometry y="86" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-80" value="消耗品" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1070" y="314" width="160" height="138" as="geometry">
+          <mxGeometry x="800" y="374" width="160" height="138" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -382,7 +382,7 @@
           <mxGeometry y="112" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-86" value="材料" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
-          <mxGeometry x="1280" y="314" width="160" height="86" as="geometry">
+          <mxGeometry x="1010" y="374" width="160" height="86" as="geometry">
             <mxRectangle x="340" y="380" width="170" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -397,20 +397,38 @@
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-89" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3aO05NasJ-ugvc4QmVaX-76" target="3aO05NasJ-ugvc4QmVaX-71">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="190" y="251" as="sourcePoint" />
-            <mxPoint x="80" y="251" as="targetPoint" />
+            <mxPoint x="-80" y="311" as="sourcePoint" />
+            <mxPoint x="-190" y="311" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-90" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3aO05NasJ-ugvc4QmVaX-80" target="3aO05NasJ-ugvc4QmVaX-71">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="940" y="324" as="sourcePoint" />
-            <mxPoint x="940" y="262" as="targetPoint" />
+            <mxPoint x="670" y="384" as="sourcePoint" />
+            <mxPoint x="670" y="322" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="3aO05NasJ-ugvc4QmVaX-91" value="" style="endArrow=block;endSize=10;endFill=0;shadow=0;strokeWidth=1;rounded=0;curved=0;edgeStyle=elbowEdgeStyle;elbow=vertical;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3aO05NasJ-ugvc4QmVaX-86" target="3aO05NasJ-ugvc4QmVaX-71">
           <mxGeometry width="160" relative="1" as="geometry">
-            <mxPoint x="1160" y="324" as="sourcePoint" />
-            <mxPoint x="940" y="262" as="targetPoint" />
+            <mxPoint x="890" y="384" as="sourcePoint" />
+            <mxPoint x="670" y="322" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3aO05NasJ-ugvc4QmVaX-102" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3aO05NasJ-ugvc4QmVaX-18" target="3aO05NasJ-ugvc4QmVaX-71">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-160" y="648" as="sourcePoint" />
+            <mxPoint x="-80" y="657" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3aO05NasJ-ugvc4QmVaX-103" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3aO05NasJ-ugvc4QmVaX-18" target="3aO05NasJ-ugvc4QmVaX-8">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-207" y="546" as="sourcePoint" />
+            <mxPoint x="590" y="303" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3aO05NasJ-ugvc4QmVaX-104" value="" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="3aO05NasJ-ugvc4QmVaX-56" target="3aO05NasJ-ugvc4QmVaX-71">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="80" y="692" as="sourcePoint" />
+            <mxPoint x="360" y="702" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
